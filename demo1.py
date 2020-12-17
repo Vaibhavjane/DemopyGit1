@@ -1,7 +1,7 @@
 import requests
 import json
 import jsonpath
-#API url
+#API url(end to end)
 url="https://reqres.in/api/users"
 #1) Read input json file
 file=open("C:\\Users\\HP\\PycharmProjects\\pythonProject\\API Automation\\creatinguser.json",'r')
@@ -20,3 +20,4 @@ response_json=json.loads(response.text)
 #pick id from json path
 id=jsonpath.jsonpath(response_json,'id')
 print(id[0])
+print("vaibhav jane")
